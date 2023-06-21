@@ -1,0 +1,41 @@
+
+How to install latest Angular , Nodejs and Npm in Ubuntu 23.0
+
+-we need curl
+
+Install curl if not present
+
+sudo apt install curl
+
+Install latest Nodejs
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+
+Uninstall
+sudo apt-get remove nodejs
+
+Install NPM
+sudo apt-get install npm
+
+Uninstall
+sudo apt-get remove npm
+
+Update Npm
+sudo npm install npm@latest -g
+
+Install Angular CLI
+sudo npm install -g @angular/cli
+
+
+Verify 
+node --version
+npm --version
+ng version
+
+
+Uninstall node and npm 
+
+sudo apt purge --autoremove nodejs npm
+sudo rm -rf /usr/bin/node /usr/bin/npm
+
